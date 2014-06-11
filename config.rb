@@ -46,6 +46,11 @@ end
 #     "Helping"
 #   end
 # end
+helpers do
+  def locations
+    ["Asheville, NC","Atlanta, GA","Austin, TX", "Charleston, SC", "Columbia, SC", "Durham, NC", "Greenville, SC", "Houston, TX", "Spartanburg, SC", "Tampa, FL"]
+  end
+end
 
 set :css_dir, 'stylesheets'
 

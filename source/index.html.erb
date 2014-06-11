@@ -11,21 +11,15 @@ title: The Iron Yard
 
     <h2>Learn to code. Get a job. Maybe.</h2>
 
+
     <p><strong>The Iron Yard Academy</strong> teaches intensive, three month courses that mentor you into a professional junior-level programmer.  Our program goes far beyond tactical skills and teaches you to think like a <em>software enginee</em>.  Programming is a lifelong study, and our process shows you to learn how to <em>learn so you remain highly valueable for the rest of your career</em>.</p>
 
     <h2>Locations</h2>
 
     <ul>
-      <li><a href="#">Asheville, NC </a></li>
-      <li><a href="#">Atlanta, GA</a></li>
-      <li><a href="#">Austin, TX</a></li>
-      <li><a href="#">Charleston, SC</a></li>
-      <li><a href="#">Columbia, SC</a></li>
-      <li><a href="#">Durham, NC</a></li>
-      <li><a href="#">Greenville, SC</a></li>
-      <li><a href="#">Houston, TX</a></li>
-      <li><a href="#">Spartanburg, SC</a></li>
-      <li><a href="#">Tampa, FL</a></li>
+      <% locations.each do |location| %>
+        <li><%= link_to location, "http://theironyard.com/" %></li>
+      <% end %>
     </ul>
 
 
