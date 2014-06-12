@@ -18,7 +18,7 @@ title: The Iron Yard
 
     <ul>
       <% locations.each do |location| %>
-        <li><%= link_to location, "http://theironyard.com/" %></li>
+        <li><%= link_to location, "http://theironyard.com/locations/" + location[0...-4].downcase %></li>
       <% end %>
     </ul>
 
